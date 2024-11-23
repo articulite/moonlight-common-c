@@ -7,3 +7,6 @@ If you are implementing your own Moonlight game streaming client that can use a 
 ## Note to Developers
 
 Moonlight-common-c requires the _specific_ version of ENet that is bundled as a submodule. This version has changes required for IPv6 compatibility and retransmission reliability, among other things. These are breaking API/ABI changes which make Moonlight-common-c incompatible with other versions of the ENet library. Attempting to runtime link to another libenet library will cause your client to crash when connecting to recent versions of GeForce Experience.
+
+
+To ensure you have the correct version of ENet, run `git submodule update --init` in the root of the repository.
